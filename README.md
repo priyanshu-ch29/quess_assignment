@@ -4,9 +4,9 @@ A lightweight, full-stack web application for managing employee records and trac
 
 ## 🚀 Live Demo
 
-- **Frontend URL**: [To be deployed]
-- **Backend API**: [To be deployed]
-- **API Documentation**: [Backend URL]/docs
+- **Frontend URL**: https://quess-assignment.vercel.app
+- **Backend API**: https://quess-assignment.onrender.com
+- **API Documentation**: https://quess-assignment.onrender.com/docs
 
 ## 📋 Table of Contents
 
@@ -15,7 +15,6 @@ A lightweight, full-stack web application for managing employee records and trac
 - [Project Structure](#project-structure)
 - [Local Setup](#local-setup)
 - [API Documentation](#api-documentation)
-- [Deployment](#deployment)
 - [Assumptions & Limitations](#assumptions--limitations)
 
 ## ✨ Features
@@ -152,6 +151,7 @@ QuessCorpAssignment/
      - For MongoDB Atlas: `mongodb+srv://username:password@cluster.mongodb.net/`
 
 6. **Run the backend server**:
+
    ```bash
    uvicorn main:app --reload
    ```
@@ -180,6 +180,7 @@ QuessCorpAssignment/
      ```
 
 4. **Run the development server**:
+
    ```bash
    npm run dev
    ```
@@ -312,35 +313,6 @@ Error response format:
 }
 ```
 
-## 🌐 Deployment
-
-### Backend Deployment (Render)
-
-1. Create account on [Render](https://render.com)
-2. Create new Web Service
-3. Connect GitHub repository
-4. Configure:
-   - **Build Command**: `pip install -r requirements.txt`
-   - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-   - **Environment Variables**: Add `MONGODB_URL` with MongoDB Atlas connection string
-5. Deploy
-
-### Frontend Deployment (Vercel)
-
-1. Create account on [Vercel](https://vercel.com)
-2. Import GitHub repository
-3. Configure:
-   - **Framework Preset**: Vite
-   - **Root Directory**: `frontend`
-   - **Environment Variables**: Add `VITE_API_URL` with deployed backend URL
-4. Deploy
-
-### Database (MongoDB Atlas)
-
-1. Already set up during local development
-2. Ensure IP whitelist includes `0.0.0.0/0` for production access
-3. Use connection string in backend environment variables
-
 ## 📝 Assumptions & Limitations
 
 ### Assumptions
@@ -400,14 +372,6 @@ npm run build
 
 **Backend**:
 Backend runs directly with uvicorn, no build step required.
-
-## 📄 License
-
-This project is created as an assignment and is free to use.
-
-## 🤝 Contact
-
-For questions or issues, please contact the developer.
 
 ---
 
